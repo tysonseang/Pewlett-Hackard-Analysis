@@ -26,6 +26,7 @@ CREATE TABLE dept_manager (
     PRIMARY KEY (emp_no, dept_no)
 );
 
+
 CREATE TABLE salaries (
   emp_no INT NOT NULL,
   salary INT NOT NULL,
