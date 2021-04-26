@@ -18,9 +18,13 @@ From this data, an Entity Relationship Diagram (ERD) was created and used to pla
 
 ## Results
 - 90,398 employees were born between January 1, 1952 and December 31, 1955, making them eligible for the company's retirement package.
+
 - The breakdown of retirement-eligible employees by title is as follows:
+
 ![retiring_titles_image.png](https://github.com/tysonseang/Pewlett-Hackard-Analysis/blob/main/retiring_titles_image.png)
+
 - Employees in senior-level roles make up more than 60% of those eligible to retire. 
+
 - 1,549 retirement-eligible employees were born between January 1, 1965 and December 31, 1965. This group is eligible to participate in a mentorship program focused on training the company's young talent. 
 
 ## Summary
@@ -28,13 +32,13 @@ Roughly 90K roles will need to be filled in order to combat the organization's d
 
 Running the additional query below on the breakdown of mentor-eligible employees by title indicates that a majority are either senior staff or engineers. 
 
-'''
+```
 -- Mentor-Eligible by Title
 SELECT COUNT(title), title
 FROM mentorship_eligibility
 GROUP BY title
 ORDER BY COUNT(title) DESC
-'''
+```
 
 ![mentor_titles_image.png](https://github.com/tysonseang/Pewlett-Hackard-Analysis/blob/main/mentor_titles_image.png)
 
